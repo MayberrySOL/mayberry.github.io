@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>$WOODS</title>
+  <meta name="description" content="Built quiet. Built to last." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    
+    <!-- Layer 1: The World (Mayberry Map) -->
+    <div class="world-layer"></div>
+    
+    <!-- Hero Content Container -->
+    <div class="hero-content">
+      
+      <!-- Layer 2: The Authority (Sheriff Seal) -->
+      <div class="authority-layer">
+        <div class="seal-emblem"></div>
+        <div class="seal-label">
+          <span class="seal-label-text">EST. 2026 • MAYBERRY</span>
+        </div>
+      </div>
+      
+      <!-- Layer 3: The Asset (Token Certificate) -->
+      <div class="asset-layer">
+        <div class="certificate">
+          <h1 class="token-name">$WOODS</h1>
+        </div>
+      </div>
+      
+      <!-- Founding Statement -->
+      <div class="founding-statement">
+        <span class="founding-text">Built quiet. Built to last.</span>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-content">
+        <p class="lead">
+          Just honest folks buildin' something decent.
+        </p>
+        <p class="description">
+          A quieter corner of Solana, in this neck of the woods. No rug pulls, no nonsense—just a community that values integrity over hype. We take it easy 'round here, but we're building something that lasts.
+        </p>
+      </div>
+    </section>
+
+    <!-- Token Details -->
+    <section class="token-details">
+      <div class="detail-grid">
+        <div class="detail-item">
+          <span class="detail-label">Chain</span>
+          <span class="detail-value">Solana</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Ticker</span>
+          <span class="detail-value">$WOODS</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Philosophy</span>
+          <span class="detail-value">Slow & Steady</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <a href="#" class="btn-primary" target="_blank">Buy on Pump.fun</a>
+      <div class="contract-address">
+        <span class="contract-label">Contract Address</span>
+        <button class="contract-copy" onclick="copyContract()">
+          <span class="contract-text">TBA • Click to Copy</span>
+          <svg class="copy-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="9" height="9" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M3 11V3C3 2.44772 3.44772 2 4 2H10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="social-links">
+      <a href="#" class="social-link" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+        <span>X / Twitter</span>
+      </a>
+      <a href="#" class="social-link" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+        </svg>
+        <span>Telegram</span>
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-town">Mayberry</p>
+        <p class="footer-tagline">In this neck of the woods</p>
+        <p class="footer-disclaimer">
+          This is a memecoin with no intrinsic value or expectation of financial return. Built for entertainment and community.
+        </p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    function copyContract() {
+      const contractText = 'TBA';
+      navigator.clipboard.writeText(contractText).then(() => {
+        const btn = document.querySelector('.contract-copy');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<span class="contract-text">Copied!</span>';
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+        }, 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>
